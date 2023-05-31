@@ -696,7 +696,7 @@ CoolPropDbl CoolProp::TabularBackend::calc_first_partial_deriv_from_fundamental_
     denominator = calc_first_partial_deriv_denominator(dBdx, dBdy, dCdx, dCdy);
 
     if ( denominator == 0.0 ){
-        return HUGE;
+        return _HUGE;
     }
     else {
         return nominator / denominator;
